@@ -24,6 +24,8 @@ make -j4 zImage modules dtbs
 mkdir ../modules
 sudo make INSTALL_MOD_PATH=../modules/ modules_install
 
+chown -R pi:pi ../modules/
+
 rm -f ../modules/lib/modules/*/build
 rm -f ../modules/lib/modules/*/source
 
@@ -36,5 +38,5 @@ cp arch/arm/boot/dts/overlays/README ../pi/overlays/
 cp arch/arm/boot/zImage ../pi/$KERNEL.img
 
 cd ..
-zip -R $KERNEL.zip pi/ modules/
+zip -r $KERNEL.zip pi/ modules/
 ```
