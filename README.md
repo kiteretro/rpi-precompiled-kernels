@@ -1,5 +1,5 @@
-# rpi-precompiled-kernels
-Repository of compiled useful kernels
+# Raspberry Pi Precompiled Kernels
+A repository of custom precompiled kernels.
 
 # How are these made?
 https://www.raspberrypi.org/documentation/linux/kernel/building.md
